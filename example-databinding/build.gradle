@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace 'com.xwray.groupie.example.databinding'
     compileSdkVersion rootProject.sdkVersion
 
     defaultConfig {
@@ -34,3 +35,5 @@ dependencies {
     implementation "androidx.vectordrawable:vectordrawable:1.0.1"
     implementation "androidx.vectordrawable:vectordrawable-animated:1.0.0"
 }
+
+

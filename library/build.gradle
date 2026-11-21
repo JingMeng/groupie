@@ -2,13 +2,15 @@ apply plugin: 'com.android.library'
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
 }
 
 archivesBaseName = 'groupie'
 
 android {
+    namespace 'com.xwray.groupie'
     compileSdkVersion rootProject.sdkVersion
 
     defaultConfig {
@@ -34,4 +36,3 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_version"
 }
 
-apply from: rootProject.file('release-bintray.gradle')

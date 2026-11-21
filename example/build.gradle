@@ -4,7 +4,8 @@ apply plugin: 'kotlin-android-extensions'
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -17,6 +18,7 @@ androidExtensions {
 }
 
 android {
+    namespace 'com.xwray.groupie.example'
     compileSdkVersion rootProject.sdkVersion
 
     defaultConfig {
@@ -46,3 +48,5 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+
